@@ -126,6 +126,6 @@ const server = http.createServer((req, res) => {
   }
 })
 
-server.listen(process.env.PORT || port, hostname, ()=> {
+server.listen(process.env.PORT || `http://${hostname}:${port}`, ()=> {
   console.log(`server runningat  http://${hostname}:${port}`)
 })
