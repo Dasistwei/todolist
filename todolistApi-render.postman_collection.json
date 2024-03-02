@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "061f1f12-748f-4bef-897f-ddbfd173c630",
+		"name": "todolistApi-render",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29633823"
+	},
+	"item": [
+		{
+			"name": "取得 todo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todolist-zk63.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolist-zk63",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增 todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"刷牙\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todolist-zk63.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolist-zk63",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部 todos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todolist-zk63.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolist-zk63",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆 todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todolist-zk63.onrender.com/todos/2307d2d1-a226-436e-855f-849915e993b6",
+					"protocol": "https",
+					"host": [
+						"todolist-zk63",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"2307d2d1-a226-436e-855f-849915e993b6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆 todo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"打掃\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todolist-zk63.onrender.com/todos/2307d2d1-a226-436e-855f-849915e993b6",
+					"protocol": "https",
+					"host": [
+						"todolist-zk63",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"2307d2d1-a226-436e-855f-849915e993b6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
